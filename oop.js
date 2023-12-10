@@ -65,7 +65,7 @@ const exampleObject = {
 // // console.log(Car.getDetails());
 // console.log(Car.arrowFunc());
 
-const testArray = ["value0", "value1", "value2", "value3"];
+// const testArray = ["value0", "value1", "value2", "value3"];
 
 // const var0 = testArray[0];
 
@@ -75,5 +75,26 @@ const testArray = ["value0", "value1", "value2", "value3"];
 // const [first, second, third, ...others] = testArray;
 // console.log(first, second, third, others);
 
-const newArr = [...testArray, "new-value", "new-value2"];
-console.log(newArr);
+// const newArr = [...testArray, "new-value", "new-value2"];
+// console.log(newArr);
+
+const Car = {
+  brand: "Ford",
+  model: "Mustang",
+  year: 1967,
+  isAutoGear: true,
+  colors: ["white", "red"],
+  details: {
+    color: "red",
+    color2: "white",
+    engineSize: 4900,
+  },
+  startEngine: function () {
+    return "Motor çalıştı";
+  },
+};
+
+const { year: modelYear, model: newName, brand, ...otherItems } = Car;
+
+console.log(modelYear, newName, brand);
+// console.log(otherItems);
