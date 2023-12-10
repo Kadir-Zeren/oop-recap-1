@@ -7,10 +7,10 @@ const exampleObject = {
   },
 };
 
-console.log(exampleObject.propertyName);
-console.log(exampleObject.methodName());
+// console.log(exampleObject.propertyName);
+// console.log(exampleObject.methodName());
 
-const car = {
+const Car = {
   brand: "Ford",
   model: "Mustang",
   year: 1967,
@@ -26,4 +26,14 @@ const car = {
   },
 };
 
-console.log(car.brand);
+// console.log(Car.brand);
+// console.log(Car.colors);
+// console.log(Car.colors[0]);
+// console.log(Car.details);
+// console.log(Car.details.engineSize);
+// console.log(Car.startEngine());
+
+console.log(Car["brand"]);
+console.log(Car.details["engineSize"]);
+console.log(Car["details"]["engineSize"]);
+console.log(Car["startEngine"]());
