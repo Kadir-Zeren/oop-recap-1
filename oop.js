@@ -72,5 +72,8 @@ const testArray = ["value0", "value1", "value2", "value3"];
 // const [firstItem, secondItem] = testArray;
 // console.log(firstItem, secondItem);
 
-const [first, second, third, ...others] = testArray;
-console.log(first, second, third, others);
+// const [first, second, third, ...others] = testArray;
+// console.log(first, second, third, others);
+
+const newArr = [...testArray, "new-value", "new-value2"];
+console.log(newArr);
