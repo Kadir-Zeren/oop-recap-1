@@ -98,3 +98,28 @@ const { year: modelYear, model: newName, brand, ...otherItems } = Car;
 
 console.log(modelYear, newName, brand);
 // console.log(otherItems);
+
+console.log(Car);
+
+const newObj = {
+  ...Car.colors,
+  newKey: "new-value",
+};
+
+console.log(newObj);
+
+const json = JSON.stringify(Car);
+console.log(typeof json, json);
+
+const newObj2 = JSON.parse(json);
+console.log(typeof newObj2, newObj2);
+
+const arr = Object.entries(Car);
+
+console.log(arr);
+
+const arr2 = Object.values(Car);
+console.log(arr2);
+
+const arr3 = Object.keys(Car);
+console.log(arr3);
